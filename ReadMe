@@ -1,0 +1,118 @@
+# MediVision 🧠💊
+
+**AI-powered medicine scanning assistant for safer, more accessible healthcare**
+
+MediVision is a real-time computer vision application that helps users identify medicines, understand their effects, and detect potentially dangerous drug combinations using AI, OCR, and audio feedback.
+
+---
+
+## 🚨 Problem
+
+Many people struggle to safely understand medication due to:
+
+- Poor eyesight or visual impairment  
+- Small or unclear packaging text  
+- Lack of medical knowledge  
+- Confusing drug names  
+- Unawareness of dangerous drug interactions  
+
+This can lead to:
+- Incorrect dosage
+- Taking the wrong medicine
+- Dangerous combinations (e.g. alcohol + medication)
+- Avoidable health risks
+
+---
+
+## 💡 Solution
+
+MediVision uses AI and computer vision to:
+
+- 📷 Scan medicines using a webcam  
+- 🔍 Detect objects (bottles, pills, etc.)  
+- 🧾 Read packaging text using OCR  
+- 💊 Identify medicine names, dosage, and quantity  
+- ⚠️ Detect dangerous drug combinations  
+- 🔊 Provide spoken feedback for accessibility  
+- 📊 Display everything in a futuristic dashboard UI  
+
+---
+
+## ✨ Features
+
+- Real-time medicine scanning  
+- Object detection using YOLOv8  
+- OCR text extraction (Tesseract)  
+- Medicine recognition + dosage parsing  
+- Drug information display  
+- Dangerous interaction detection  
+- Alcohol detection  
+- Audio narration + alerts  
+- Scan history tracking  
+- Modern glassmorphism dashboard UI  
+
+---
+
+## 🧠 Tech Stack
+
+| Component | Technology |
+|----------|-----------|
+| Language | Python |
+| Computer Vision | OpenCV |
+| Object Detection | YOLOv8 (Ultralytics) |
+| OCR | Tesseract (`pytesseract`) |
+| Text Processing | Python + Regex |
+| Text-to-Speech | pyttsx3 |
+| UI | OpenCV rendering |
+
+---
+
+## ⚙️ How It Works
+
+1. Webcam captures live video  
+2. YOLOv8 detects relevant objects (e.g. bottles)  
+3. Regions are processed using OCR  
+4. Text is analysed to extract:
+   - medicine name  
+   - dosage  
+   - quantity  
+5. System checks for dangerous combinations  
+6. Results are displayed in a dashboard  
+7. Audio feedback announces key information  
+
+---
+
+## 🧪 Example Use Case
+
+1. User points camera at a medicine box  
+2. System detects "Paracetamol"  
+3. Extracts: `500 mg`, `32 tablets`  
+4. Displays drug information  
+5. If alcohol is detected → ⚠️ triggers warning  
+6. System speaks:  
+   > “Paracetamol. 500 milligrams. Warning: risk of liver damage with alcohol.”
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/medivision.git
+cd medivision
+
+### 2. Install dependencies
+pip install opencv-python pytesseract pyttsx3 ultralytics numpy
+
+### 3. Install Tesseract OCR
+Mac -> brew install tesseract 
+
+Windows -> https://github.com/tesseract-ocr/tesseract
+
+### 4. Run the app
+python vision.py
+
+Controls:
+Q -> Quit
+S -> Force Scan
+
