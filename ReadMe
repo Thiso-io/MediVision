@@ -105,7 +105,7 @@ cd medivision
 pip install opencv-python pytesseract pyttsx3 ultralytics numpy
 
 ### 3. Install Tesseract OCR
-Mac -> brew install tesseract 
+Mac -> brew install tesseract, then comment out the file extension at the top of the source code file (clearly labelled) AND IF NEEDED UNCOMMENT THE MAC FILE EXTENSION
 
 Windows -> https://github.com/tesseract-ocr/tesseract
 
