@@ -13,6 +13,9 @@ from ultralytics import YOLO
 # If Tesseract is not found automatically on your Mac, uncomment this:
 # pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
 
+# If your using Mac comment the next line out:
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 model = YOLO("yolov8n.pt")
 
 # Core settings
