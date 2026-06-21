@@ -1,14 +1,17 @@
+<div align="center">
+  <a href="https://youtu.be/Q3wpYAWi6IM">
+    <img src="intro_card.png" alt="Medivision — demo">
+  </a>
+</div>
+
+
 # MediVision 🧠💊
 
 **AI-powered medicine scanning assistant for safer, more accessible healthcare**
 
 MediVision is a real-time computer vision application that helps users identify medicines, understand their effects, and detect potentially dangerous drug combinations using AI, OCR, and audio feedback.
 
-<div align="center">
-  <a href="https://youtu.be/Q3wpYAWi6IM">
-    <img src="intro_card.png" alt="Medivision — demo">
-  </a>
-</div>
+
 ---
 
 ## 🚨 Problem
